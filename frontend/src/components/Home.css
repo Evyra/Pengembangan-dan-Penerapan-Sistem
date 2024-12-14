@@ -1,0 +1,96 @@
+/* src/components/Home.css */
+
+/* General Home Layout */
+.home {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Banner Section */
+.banner-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: azure;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
+.products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+/* Product Card */
+.product-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-description {
+    color: #525252;
+}
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,19 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+}
+
+.navbar-logo img{
+    margin-top: 2px;
+    width: 150px;
+}
+
+.navbar-cart img {
+    width: 30px;
+    height: 30px;
+}
